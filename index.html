@@ -21,7 +21,6 @@
 
     <!---------- body starts ---------->
     <body>
-
         <!-- section header -->
         <section class="section header">
             <div class="container">
@@ -169,33 +168,43 @@
         <section class="section box">
           <div class="container">
             <div class="row">
-              <div class="card-deck">
-                <div class="card card_box">
+              <div class="col-lg-4">
+                <div class="card card_box" style="width: 18rem;">
                   <div class="card-body text-center">
                     <h3 class="card-text"><b>Why Choose Bethany for your company website?</b></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Commodi ullam libero ab doloremque harum explicabo sequi aut alias, quibusdam beatae esse et molestiae corporis saepe ad.</p>
                     <button class="btn btn-outline-light mt-4 card_box_btn" type="submit">Learn More></button>
                   </div>
                 </div>
-                <div class="card card_box">
-                  <h3><i class="far fa-save card_box_icon"></i></h3>
-                  <div class="card-body text-center">
-                    <h4 class="card-text"><b>Corporis voluptates sit</b></h4>
-                    <p>Perspiciatis ad praesentium quasi animi optio molestias harum, quibusdam facere veritatis fuga alias expedita, atque adipisci nesciunt voluptas soluta, quo error illum!</p>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card card_box" style="width: 18rem;">
+                      <h3><i class="far fa-save card_box_icon"></i></h3>
+                      <div class="card-body text-center">
+                        <h4 class="card-text"><b>Corporis voluptates sit</b></h4>
+                        <p>Perspiciatis ad praesentium quasi animi optio molestias harum, quibusdam facere veritatis fuga alias expedita, atque adipisci nesciunt voluptas soluta, quo error illum!</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card card_box">
-                  <h3><i class="fas fa-cube card_box_icon"></i></h3>
-                  <div class="card-body text-center">
-                    <h4 class="card-text"><b>Ullamco laboris ladore pan</b></h4>
-                    <p> Nostrum quos ipsum eaque!. Commodi ullam libero ab doloremque harum explicabo sequi aut alias, quibusdam beatae esse et molestiae corporis saepe ad.</p>
+                  <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card card_box" style="width: 18rem;">
+                      <h3><i class="fas fa-cube card_box_icon"></i></h3>
+                      <div class="card-body text-center">
+                        <h4 class="card-text"><b>Ullamco laboris ladore pan</b></h4>
+                        <p> Nostrum quos ipsum eaque!. Commodi ullam libero ab doloremque harum explicabo sequi aut alias, quibusdam beatae esse et molestiae corporis saepe ad.</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card card_box">
-                  <h3><i class="fas fa-photo-video card_box_icon"></i></h3>
-                  <div class="card-body text-center">
-                    <h4 class="card-text"><b>Labore consequatur</b></h4>
-                    <p>Aut suscripy aut cum nemo deleniti aut pmnis.Doloribus ut maiores omnis facere</p>
+                  <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card card_box" style="width: 18rem;">
+                      <h3><i class="fas fa-photo-video card_box_icon"></i></h3>
+                      <div class="card-body text-center">
+                        <h4 class="card-text"><b>Labore consequatur</b></h4>
+                        <p>Aut suscripy aut cum nemo deleniti aut pmnis.Doloribus ut maiores omnis facere</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -285,47 +294,168 @@
             </div>
             <div class="row">
               <div class="col-lg-4 menu_navigation">
-                <ul class="list-group list-group-horizontal">
-                  <li class="list-group-item active_group">ALL</li>
-                  <li class="list-group-item">APP</li>
-                  <li class="list-group-item">CARD</li>
-                  <li class="list-group-item">WEB</li>
+                <ul class="list-group list-group-horizontal" id="myList" role="tablist">
+                  <a class="list-group-item active_group" data-toggle="list" href="#home" role="tab">All</a>
+                  <a class="list-group-item " data-toggle="list" href="#profile" role="tab">App</a>
+                  <a class="list-group-item " data-toggle="list" href="#messages" role="tab">Card</a>
+                  <a class="list-group-item " data-toggle="list" href="#settings" role="tab">Web</a>
                 </ul>
               </div>
             </div>
-            <div class="row">
-              <div class="container">
-                <div class="row gallery_images">
-                  <div class="col-md-4 col-md-offset-1">
-                    <img class="img-responsive" src="assets/image/portfolio-1.jpg">
-                  </div>
-                  <div class="col-md-4 col-md-offset-1" >
-                    <img class="img-responsive" src="assets/image/portfolio-2.jpg">
-                  </div>
-                  <div class="col-md-4 col-md-offset-1" >
-                    <img class="img-responsive" src="assets/image/portfolio-3.jpg" >
+            <div class="tab-content">
+              <div class="tab-pane active" id="home" role="tabpanel">
+                <div class="row">
+                  <div class="container">
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-2.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-4.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-5.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg" >
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="row gallery_images">
-                  <div class="col-md-4 col-md-offset-1">
-                    <img class="img-responsive" src="assets/image/portfolio-4.jpg">
-                  </div>
-                  <div class="col-md-4 col-md-offset-1" >
-                    <img class="img-responsive" src="assets/image/portfolio-5.jpg">
-                  </div>
-                  <div class="col-md-4 col-md-offset-1" >
-                    <img class="img-responsive" src="assets/image/portfolio-6.jpg" >
+              </div>
+              <div class="tab-pane" id="profile" role="tabpanel">
+                <div class="row">
+                  <div class="container">
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-4.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-5.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-2.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg" >
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="row gallery_images">
-                  <div class="col-md-4 col-md-offset-1">
-                    <img class="img-responsive" src="assets/image/portfolio-3.jpg">
+              </div>
+              <div class="tab-pane" id="messages" role="tabpanel">
+                <div class="row">
+                  <div class="container">
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-2.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-4.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-5.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg" >
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-4 col-md-offset-1" >
-                    <img class="img-responsive" src="assets/image/portfolio-6.jpg">
-                  </div>
-                  <div class="col-md-4 col-md-offset-1" >
-                    <img class="img-responsive" src="assets/image/portfolio-1.jpg" >
+                </div>
+              </div>
+              <div class="tab-pane" id="settings" role="tabpanel">
+                <div class="row">
+                  <div class="container">
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-2.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-4.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-5.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg" >
+                      </div>
+                    </div>
+                    <div class="row gallery_images">
+                      <div class="col-md-4 col-md-offset-1">
+                        <img class="img-responsive" src="assets/image/portfolio-3.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-6.jpg">
+                      </div>
+                      <div class="col-md-4 col-md-offset-1" >
+                        <img class="img-responsive" src="assets/image/portfolio-1.jpg" >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -635,7 +765,7 @@
         <section class="section footer">
           <div class="container">
             <div class="row footer_area">
-              <div class="col-lg-6">@Copyright<b>Bethany</b>.All Rights Reserved</div>
+              <div class="col-lg-6">&copy Copyright<b>Bethany</b>.All Rights Reserved</div>
               <div class="col-lg-6 footer_right">
                 <i class="fab fa-twitter-square footer_icon"></i>
                 <i class="fab fa-facebook-square footer_icon"></i>
@@ -648,8 +778,6 @@
         </section>
         <!-- section footer ends -->
 
-
-
         <!-- include vendor script -->
         <script src="assets/js/javascript.js"></script>
         <script src="assets/js/all.min.js"></script>
@@ -660,10 +788,7 @@
         <!-- Template main js script -->
         <script src="assets/js/script.js"></script>
         <!-- main js script ends -->
-   
     </body>
     <!---------- body ends ---------->
-
     </html>
-
 <!---------------End of Code---------------->
